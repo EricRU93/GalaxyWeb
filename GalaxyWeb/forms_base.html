@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de formularios y texto</title>
+    <link rel="stylesheet" href="style_base.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <h1>Galaxy Web - AdminWeb</h1>
+  </header>
+  <nav>
+    <ul class="menu">
+        <li><a class="selected" href="#"><span class="material-icons-outlined">perm_identity</span> Usuarios</a></li>
+        <li><a href="#"><span class="material-icons-outlined">verified</span> Tipos de Permisos</a></li>
+        <li><a href="#"><span class="material-icons-outlined">group_add</span> Permisos de Usuarios</a></li>
+        <li><a href="#"><span class="material-icons-outlined">memory</span> Hardcodes</a></li>
+        <li><a href="#"><span class="material-icons-outlined">double_arrow</span> Accesos</a></li>
+        <li><a href="#"><span class="material-icons-outlined">help</span> FAQ</a></li>
+        <li><a href="#">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="filters">
+        <form>
+            <fieldset>
+                <legend><span class="material-icons-outlined">perm_identity</span></legend>
+                <div class="padBot">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="order" id="nombre">
+                </div>
+                <div class="padBot">
+                  <label for="e-mail"> E-mail</label>
+                  <input type="e-mail" name="order" id="e-mail">
+                </div>
+                <div class="padBot">
+                  <label for="apellido1"> Primer apellido</label>
+                  <input type="text" name="order" id="apellido1" checked>
+                </div>
+                <div class="padBot">
+                  <label for="apellido2"> Segundo apellido</label>
+                  <input type="text" name="order" id="apellido2" checked>
+                </div>
+                <div class="padBot">
+                  <label for="country">País</label>
+                  <input type="text" name="order" id="country">
+                </div>
+                <div class="padBot">
+                  <label for="status">Estado </label>
+                  <select name="status" id="status">
+                    <option selected value=""></option>
+                    <option value="conectado">Conectado</option>
+                    <option value="conectado">Desconectado</option>
+                    <option value="conectado">Bloqueado</option>
+                  </select>
+                </div>
+                <div class="padBot">
+                  <label for="register_date"> Fecha de registro</label>
+                  <input type="date" name="order" id="register_date">
+                </div>
+                <div class="padBot">
+                  <label for="vip_start_date"> Fecha inicio VIP</label>
+                  <input type="date" name="order" id="vip_start_date">
+                </div>
+                <div class="padBot">
+                  <label for="vip_end_date"> Fecha fin VIP</label>
+                  <input type="date" name="order" id="vip_end_date">
+                </div>
+              </fieldset>
+            <input type="submit" value="Buscar" class="button">
+        </form>
+    </div>
+    <div class="results">
+      <table class="results-table">
+        <tr>
+          <th>E-mail</th>
+          <th>Nombre</th>
+          <th>Primer apellido</th>
+          <th>Segundo apellido</th>
+          <th>País</th>
+          <th>Estado</th>
+          <th>Fecha de registro</th>
+          <th>Fecha Inicio VIP</th>
+          <th>Fecha Fin VIP</th>
+        </tr>
+        <tr>
+          <td>elbrayan123@gmail.com</td>
+          <td>Brayan</td>
+          <td>lopez</td>
+          <td>martin</td>
+          <td>España</td>
+          <td>Desconectado</td>
+          <td>11/11/2005</td>
+          <td>11/11/2016</td>
+          <td>11/12/2017</td>
+        </tr>
+        <tr class="par">
+          <td>elbrayan123@gmail.com</td>
+          <td>Brayan</td>
+          <td>lopez</td>
+          <td>martin</td>
+          <td>España</td>
+          <td>Desconectado</td>
+          <td>11/11/2005</td>
+          <td>11/11/2016</td>
+          <td>11/12/2017</td>
+        </tr>
+        <tr>
+          <td>elbrayan123@gmail.com</td>
+          <td>Brayan</td>
+          <td>lopez</td>
+          <td>martin</td>
+          <td>España</td>
+          <td>Desconectado</td>
+          <td>11/11/2005</td>
+          <td>11/11/2016</td>
+          <td>11/12/2017</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
